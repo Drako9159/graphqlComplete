@@ -9,7 +9,7 @@ export default function ProjectForm() {
     description: "",
   });
   const [createProject, { loading, error }] = useMutation(CREATE_PROJECT, {
-    refetchQueries: [{ query: GET_PROJECTS }, "getProjects"],
+    refetchQueries: [{ query: GET_PROJECTS }, "GetProjects"],
   });
   function handleChange(e) {
     setProject({
@@ -28,6 +28,7 @@ export default function ProjectForm() {
   }
   return (
     <form>
+    
       {error && <p>{error.message}</p>}
       <input
         type="text"

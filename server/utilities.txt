@@ -1,0 +1,3 @@
+npm install @apollo/client graphql
+npm install @apollo/server graphql
+npm install graphql-tag
